@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('prep') {
             steps {
-                echo "starting prep phase"
-                echo "finish prep phase"
+                sh 'php --version'
             }
         }
         stage('build') {
